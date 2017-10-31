@@ -1,5 +1,8 @@
 #! /bin/bash
 
+#Initialize terraform
+terraform init
+
 #This file is invokes via init.sh
 ##Create infrastructure and inventory file
 log "===Infrastructure preperation script - cluster-create.sh Initiated==="
