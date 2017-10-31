@@ -1,9 +1,6 @@
 #!/bin/bash
 LOG_FILE_LOCATION="/home/$USER/terraform/ballerina/logs"
 
-#Initialize terraform
-terraform init
-
 # Log Message should be parsed $1
 log(){
  TIME=`date`
