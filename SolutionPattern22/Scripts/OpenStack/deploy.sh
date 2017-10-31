@@ -53,19 +53,19 @@ sleep 10
 default "${default_port}"
 
 pods=$(kubectl get pods --output=jsonpath={.items..metadata.name})
-json='['
+json='{'hosts' : ['
 for pod in $pods; do
          hostip=$(kubectl get pods "$pod" --output=jsonpath={.status.hostIP})
          lable=$(kubectl get pods "$pod" --output=jsonpath={.metadata.labels.name})
          servicedata=$(kubectl describe svc "$lable")
-         json+='{"hostIP" :"'$hostip'", "lable" :"'$lable'", "ports" :['
+         json+='{"ip" :"'$hostip'", "label" :"'$lable'", "ports" :['
          declare -a dataarray=($servicedata)
          let count=0
          for data in ${dataarray[@]}  ; do
             if [ "$data" = "NodePort:" ]; then
             IFS='/' read -a myarray <<< "${dataarray[$count+2]}"
             json+='{'
-            json+='"protocol" :"'${dataarray[$count+1]}'",  "port" :"'${myarray[0]}'"'
+            json+='"protocol" :"'${dataarray[$count+1]}'",  "portNumber" :"'${myarray[0]}'"'
             json+="},"
             fi
 
@@ -83,7 +83,7 @@ for pod in $pods; do
 done
 json=${json:0:${#json}-1}
 
-json+="]"
+json+="]}"
 
 echo $json;
 
