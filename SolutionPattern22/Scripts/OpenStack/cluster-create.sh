@@ -1,13 +1,14 @@
 #! /bin/bash
 
-#Initialize terraform
-terraform init
-
 #This file is invokes via init.sh
 ##Create infrastructure and inventory file
 log "===Infrastructure preperation script - cluster-create.sh Initiated==="
 log "Start creating infrastructure with Terraform"
 cd $script_path
+
+#Initialize terraform
+terraform init
+
 terraform apply 
 
 ##Run Ansible configurations
