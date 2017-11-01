@@ -35,7 +35,7 @@ if [ -z $OS_PASSWORD ]; then
 fi
 
 # Seems Jenkins is not picking the Path variables from the system, hence as a workaroubd setting the path
-TERRA_HOME=/etc/terraform
+TERRA_HOME=/opt/terraform
 export PATH=$TERRA_HOME:$PATH
 
 # Trigering the Ansible Scripts to do the kubernetes cluster
