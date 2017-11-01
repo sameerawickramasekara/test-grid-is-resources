@@ -5,6 +5,10 @@
 log "===Infrastructure preperation script - cluster-create.sh Initiated==="
 log "Start creating infrastructure with Terraform"
 cd $script_path
+
+#Initialize terraform
+terraform init
+
 terraform apply 
 
 ##Run Ansible configurations
