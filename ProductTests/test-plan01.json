@@ -11,7 +11,7 @@
   "clusterType":"K8S",
   "deployerType":"PUPPET",
   "os":"Ubuntu 17.04",
-  "database":"MySQL 5.7",
+  "databaseEngine":"MySQL 5.7",
   "solutionPatterns":[
     {
       "name": "SolutionPattern22",
