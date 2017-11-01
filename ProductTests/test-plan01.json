@@ -7,7 +7,7 @@
   "enabled":true,
   "deploymentPattern":"single-node",
   "infrastructureType":"OPENSTACK",
-  "instanceType":"Docker Containers",
+  "instanceType":"Docker_Containers",
   "clusterType":"K8S",
   "deployerType":"PUPPET",
   "os":"Ubuntu 17.04",
