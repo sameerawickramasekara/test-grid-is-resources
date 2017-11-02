@@ -4,7 +4,7 @@
   "productName":"wso2-is",
   "productVersion":"5.4.0",
   "name":"TestPlan2",
-  "enabled":true,
+  "enabled":false,
   "deploymentPattern":"single-node",
   "infrastructureType":"OPENSTACK",
   "instanceType":"Docker_Containers",
