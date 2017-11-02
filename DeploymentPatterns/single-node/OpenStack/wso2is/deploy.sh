@@ -37,7 +37,6 @@ while getopts :h FLAG; do
 done
 export KUBERNETES_MASTER=$1
 kubectl create secret docker-registry registrykey --docker-server=$2 --docker-username=$3 --docker-password=$4 --docker-email=$5
-echo "kubectl create secret docker-registry registrykey --docker-server=$2 --docker-username=$3 --docker-password=$4 --docker-email=$5"
 
 validateKubeCtlConfig
 
