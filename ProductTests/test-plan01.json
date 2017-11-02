@@ -4,6 +4,7 @@
   "productName":"wso2-is",
   "productVersion":"5.4.0",
   "name":"TestPlan1",
+  "description":"Single Node deployment on OpenStack/K8S",
   "enabled":true,
   "deploymentPattern":"single-node",
   "infrastructureType":"OPENSTACK",
