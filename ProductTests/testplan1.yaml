@@ -18,12 +18,9 @@
 wso2.testgrid.testplan:
   enabled: true
   name: "TestPlan1"
-  productName: "wso2-apim"
-  productVersion: "3.0.0"
   description: "Two node pattern test suite"
   deploymentPattern: "two-node"
   deployerType: "puppet"
-  deploymentRepository: "https://github.com/yasassri/apim-distributed-tests"
   testScenarios:
     -
       enabled: true
