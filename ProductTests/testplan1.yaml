@@ -18,9 +18,12 @@
 wso2.testgrid.testplan:
   enabled: true
   name: "TestPlan1"
+  productName: "wso2-apim"
+  productVersion: "3.0.0"
   description: "Two node pattern test suite"
   deploymentPattern: "two-node"
-  deployerType: "PUPPET"
+  deployerType: "puppet"
+  deploymentRepository: "https://github.com/yasassri/apim-distributed-tests"
   testScenarios:
     -
       enabled: true
@@ -32,42 +35,42 @@ wso2.testgrid.testplan:
       testEngine: JMETER
   # TestGrid Infrastructure Configuration Parameters
   infrastructure:
-    providerType: "OPENSTACK"
-    clusterType: "K8S"
-    instanceType: "DOCKER_CONTAINERS"
+    providerType: "OpenStack"
+    clusterType: "Kubernetes"
+    instanceType: "Docker"
     operatingSystem:
       name: "Ubuntu"
       version: "17.04"
     database:
-      engine: "MYSQL"
+      engine: "MySQL"
       version: "5.7"
-      securityProperties:
-        apiKey: "242424"
-        sshKey: "abc.key"
-      nodes:
-        -
-          label: "wso2-gateway"
-          size: "m1.xlarge"
-          host: "wso2.gateway.com"
-          image: "K8S-COREOS-Optimized"
-          nodeType: "Server"
-          ports:
-            -
-              protocol: "https"
-              portNumber: 9443
-            -
-              protocol: "nio"
-              portNumber: 8243
-        -
-          label: "wso2-km"
-          size: "m1.xmedium"
-          host: "wso2.keymanager.com"
-          image: "K8S-COREOS-Optimized"
-          nodeType: "Server"
-          ports:
-            -
-              protocol: "https"
-              portNumber: 9443
-            -
-              protocol: "thrift"
-              portNumber: 10389
+    securityProperties:
+      apiKey: "242424"
+      sshKey: "abc.key"
+    nodes:
+     -
+       label: "wso2-gateway"
+       size: "m1.xlarge"
+       host: "wso2.gateway.com"
+       image: "K8S-COREOS-Optimized"
+       nodeType: "Server"
+       ports:
+          -
+            protocol: "https"
+            portNumber: 9443
+          -
+            protocol: "nio"
+            portNumber: 8243
+     -
+       label: "wso2-km"
+       size: "m1.xmedium"
+       host: "wso2.keymanager.com"
+       image: "K8S-COREOS-Optimized"
+       nodeType: "Server"
+       ports:
+          -
+            protocol: "https"
+            portNumber: 9443
+          -
+            protocol: "thrift"
+            portNumber: 10389
