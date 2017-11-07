@@ -41,7 +41,7 @@ wso2.testgrid.testplan:
     operatingSystem:
       name: "Ubuntu"
       version: "17.04"
-    databse:
+    database:
       engine: "MySQL"
       version: "5.7"
       securityProperties:
