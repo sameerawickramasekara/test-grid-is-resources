@@ -20,7 +20,7 @@ wso2.testgrid.testplan:
   name: "TestPlan1"
   description: "Two node pattern test suite"
   deploymentPattern: "two-node"
-  deployerType: "puppet"
+  deployerType: "PUPPET"
   testScenarios:
     -
       enabled: true
@@ -32,9 +32,9 @@ wso2.testgrid.testplan:
       testEngine: JMETER
   # TestGrid Infrastructure Configuration Parameters
   infrastructure:
-    providerType: "OpenStack"
-    clusterType: "Kubernetes"
-    instanceType: "Docker"
+    providerType: "OPENSTACK"
+    clusterType: "K8S"
+    instanceType: "DOCKER_CONTAINERS"
     operatingSystem:
       name: "Ubuntu"
       version: "17.04"
