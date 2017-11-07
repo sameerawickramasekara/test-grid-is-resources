@@ -51,7 +51,7 @@ wso2.testgrid.testplan:
        host: "wso2.gateway.com"
        image: "K8S-COREOS-Optimized"
        nodeType: "Server"
-       ports:
+       openPorts:
         -
           protocol: "https"
           portNumber: 9443
@@ -64,7 +64,7 @@ wso2.testgrid.testplan:
        host: "wso2.keymanager.com"
        image: "K8S-COREOS-Optimized"
        nodeType: "Server"
-       ports:
+       openPorts:
         -
           protocol: "https"
           portNumber: 9443
