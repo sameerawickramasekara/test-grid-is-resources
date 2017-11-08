@@ -16,7 +16,7 @@
   "solutionPatterns":[
     {
       "name": "SolutionPattern22",
-      "enabled": false,
+      "enabled": true,
       "testType": "JMETER"
     },
     {
