@@ -21,7 +21,7 @@
     },
     {
       "name": "SolutionPattern23",
-      "enabled": true,
+      "enabled": false,
       "testType": "TESTNG"
     }
   ]
