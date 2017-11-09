@@ -29,30 +29,7 @@ wso2.testgrid.infrastructure:
   securityProperties:
     apiKey: "242424"
     sshKey: "abc.key"
-  nodes:
+  scripts:
     -
-     label: "wso2-gateway"
-     size: "m1.xlarge"
-     host: "wso2.gateway.com"
-     image: "K8S-COREOS-Optimized"
-     nodeType: "Server"
-     openPorts:
-      -
-        protocol: "https"
-        portNumber: 9443
-      -
-        protocol: "nio"
-        portNumber: 8243
-    -
-     label: "wso2-km"
-     size: "m1.xmedium"
-     host: "wso2.keymanager.com"
-     image: "K8S-COREOS-Optimized"
-     nodeType: "Server"
-     openPorts:
-      -
-        protocol: "https"
-        portNumber: 9443
-      -
-        protocol: "thrift"
-        portNumber: 10389
+     scriptType: "SHELL"
+     fileName: "OpenStack/infra.sh"
