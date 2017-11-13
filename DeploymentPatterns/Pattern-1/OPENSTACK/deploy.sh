@@ -61,11 +61,11 @@ for node in $nodes; do
 		exit 1
 	fi
 	echo "Docker login succeeded"
-    ssh core@$node "docker pull docker.wso2.com/sshd-kubernetes:1.0.0 &&
-		docker pull docker.wso2.com/rsync-kubernetes:1.0.0 &&
-		docker pull docker.wso2.com/wso2am-analytics-kubernetes:2.1.0 &&
-		docker pull docker.wso2.com/wso2am-kubernetes:2.1.0 &&
-		docker pull docker.wso2.com/apim-rdbms-kubernetes:2.1.0"
+   # ssh core@$node "docker pull docker.wso2.com/sshd-kubernetes:1.0.0 &&
+	#	docker pull docker.wso2.com/rsync-kubernetes:1.0.0 &&
+	#	docker pull docker.wso2.com/wso2am-analytics-kubernetes:2.1.0 &&
+	#	docker pull docker.wso2.com/wso2am-kubernetes:2.1.0 &&
+	#	docker pull docker.wso2.com/apim-rdbms-kubernetes:2.1.0"
 done
 
 #clone APIM kubernetes artifacts repo
