@@ -6,7 +6,7 @@
   "name":"TestPlan1",
   "description":"Single Node deployment on OpenStack/K8S",
   "enabled":true,
-  "deploymentPattern":"Pattern-1",
+  "deploymentPattern":"single-node",
   "infrastructureType":"OPENSTACK",
   "instanceType":"Docker_Containers",
   "clusterType":"K8S",
