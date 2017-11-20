@@ -1,0 +1,28 @@
+[
+  {
+    "parameterKey": "EC2KeyPair",
+    "parameterValue": "test-grid-key"
+  }, 
+  {
+    "parameterKey": "InstanceType",
+    "parameterValue": "t2.micro"
+  },
+  {
+    "parameterKey": "WSO2EnvVPC",
+    "parameterValue": "vpc-e8c8b791"
+  },
+  {
+    "parameterKey": "ALBCertificateARN",
+    "parameterValue": "arn:aws:acm:us-east-1:610968236798:certificate/158f2c31-3ae7-409d-bffb-f25d85c2e7c1"
+  },
+  {
+    "parameterKey": "WUMUsername",
+    "parameterValue": "WUM_USERNAME"
+  },
+  {
+    "parameterKey": "WUMPassword",
+    "parameterValue": "WUM_PASSWORD"
+  }
+
+
+]
