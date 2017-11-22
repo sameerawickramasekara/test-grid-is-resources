@@ -19,7 +19,7 @@ wso2.testgrid.infrastructure:
   providerType: "OPENSTACK"
   clusterType: "K8S"
   instanceType: "DOCKER_CONTAINERS"
-  name: "single-node2"
+  name: "single-node"
   operatingSystem:
     name: "Ubuntu"
     version: "17.04"

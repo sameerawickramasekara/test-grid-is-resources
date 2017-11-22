@@ -17,7 +17,7 @@
 # TestGrid Infrastructure Configuration Parameters
 wso2.testgrid.infrastructure:
   providerType: "AWS"
-  clusterType: "None"
+  clusterType: "ECS"  #todo
   instanceType: "EC2"
   name: "aws-single-node"
   securityProperties:
