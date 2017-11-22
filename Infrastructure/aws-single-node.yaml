@@ -19,7 +19,7 @@ wso2.testgrid.infrastructure:
   providerType: "AWS"
   clusterType: "ECS"
   instanceType: "EC2"
-  name: "single-node"
+  name: "aws-single-node2"
   operatingSystem:
     name: "Ubuntu"
     version: "17.04"
@@ -34,4 +34,3 @@ wso2.testgrid.infrastructure:
      scriptType: "CLOUD_FORMATION"
      filePath: "wso2-is-with-alb-cf-template.yml"
      name: "wso02-is"
-     scriptParameters: "wso2-is-with-alb-cf-template-parameters.json"
