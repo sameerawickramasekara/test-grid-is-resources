@@ -33,5 +33,5 @@ wso2.testgrid.infrastructure:
     -
      scriptType: "CLOUD_FORMATION"
      filePath: "wso2-is-with-alb-cf-template.yml"
-     name: "wso02-is"
+     name: "wso2-is"
      scriptParameters: "wso2-is-with-alb-cf-template-parameters.json"

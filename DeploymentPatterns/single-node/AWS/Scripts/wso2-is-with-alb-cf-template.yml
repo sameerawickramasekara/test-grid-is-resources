@@ -444,10 +444,10 @@ Outputs:
   WSO2ISPrivateIP:
       Value: !Sub '${WSO2EnvISInstance.PrivateIp}'
       Description: Private IP of the WSO2 IS Instance
-  WSO2ISHostName:
+  wso2isdefault:
         Value: !Sub '${WSO2EnvISApplicationLoadBalancer.DNSName}'
         Description: DNS Name of the ALB fronting WSO2 IS Instance
-  wso2is:
+  ISURL:
     Value: !Sub 'https://${WSO2EnvISApplicationLoadBalancer.DNSName}/carbon'
     Description: Access URL of the Management Console
 

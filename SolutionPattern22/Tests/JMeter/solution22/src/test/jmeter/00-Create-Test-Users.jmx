@@ -21,7 +21,7 @@
           </elementProp>
           <elementProp name="server_port" elementType="Argument">
             <stringProp name="Argument.name">server_port</stringProp>
-            <stringProp name="Argument.value">${__property(servlet-https)}</stringProp>
+            <stringProp name="Argument.value">${__property(servlethttps)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">443</stringProp>
           </elementProp>
