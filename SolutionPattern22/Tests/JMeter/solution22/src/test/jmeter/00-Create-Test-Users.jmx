@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="server_host" elementType="Argument">
             <stringProp name="Argument.name">server_host</stringProp>
-            <stringProp name="Argument.value">${__property(wso2is-default)}</stringProp>
+            <stringProp name="Argument.value">${__property(wso2isdefault)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">is530.wso2.com </stringProp>
           </elementProp>
