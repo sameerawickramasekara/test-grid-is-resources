@@ -19,8 +19,8 @@ wso2.testgrid.testplan:
   enabled: true
   name: "TestPlan1"
   description: "Single node test suite"
-  deploymentPattern: "aws-single-node"
-  deployerType: "PUPPET"
+  deploymentPattern: "single-node"
+  deployerType: "AWS_CF"
   testScenarios:
     -
       enabled: true
